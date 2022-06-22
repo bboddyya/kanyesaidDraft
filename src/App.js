@@ -2,11 +2,11 @@ import "./App.css";
 import Quote from "./Components/Quote/Quote";
 import Button from "./Components/Button/Button";
 import Picture from "./Components/Picture/Picture";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Context } from "./Context/Context";
 
 function App() {
-  const [quote, setQuote] = useContext("...");
+  const [quote, setQuote] = useState("...");
 
   return (
     <Context.Provider value={{ quote, setQuote }}>
