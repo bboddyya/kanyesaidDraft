@@ -9,7 +9,7 @@ function Picture() {
 
   return (
     <div className="picture">
-      <img src={firstKanye} width={"200px"} />
+      <img src={firstKanye} width={"250px"} />
     </div>
   );
 }
