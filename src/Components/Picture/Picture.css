@@ -1,0 +1,25 @@
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.picture-enter {
+  opacity: 0;
+}
+.picture-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.picture-exit {
+  opacity: 1;
+}
+.picture-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
