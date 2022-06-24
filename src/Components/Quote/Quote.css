@@ -1,5 +1,6 @@
 .wrap {
   max-width: 85%;
+  min-width: 300px;
 }
 
 .quote-wrapper {

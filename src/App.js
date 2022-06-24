@@ -9,13 +9,23 @@ import Player from "./Components/Player/Player";
 function App() {
   const [quote, setQuote] = useState("KANYE SAID...");
   const [visionQuote, setVisionQuote] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     setVisionQuote(false);
   }, [quote]);
 
   return (
-    <Context.Provider value={{ quote, setQuote, visionQuote, setVisionQuote }}>
+    <Context.Provider
+      value={{
+        quote,
+        setQuote,
+        visionQuote,
+        setVisionQuote,
+        isPlaying,
+        setIsPlaying,
+      }}
+    >
       <div className="App">
         <Player />
         <div className="main-wrapper">

@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
+  padding-right: 15px;
 }
 
 .picture img {
   width: 200px;
-  margin-bottom: 50px;
 }
 
 .picture-enter {

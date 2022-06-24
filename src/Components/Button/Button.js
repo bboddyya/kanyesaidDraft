@@ -4,13 +4,14 @@ import { Context } from "../../Context/Context";
 import "./Button.css";
 
 function Button() {
-  const { setQuote, setVisionQuote } = useContext(Context);
+  const { setQuote, setVisionQuote, setIsPlaying } = useContext(Context);
 
   async function getQuote() {
     const data = await fetch("https://api.kanye.rest");
     const json = await data.json();
-    await setQuote(json.quote.toUpperCase());
     await setVisionQuote(true);
+    await setQuote(json.quote.toUpperCase());
+    await setIsPlaying(true);
   }
 
   const onKeyDown = (e) => {
