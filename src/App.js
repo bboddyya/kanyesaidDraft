@@ -4,6 +4,7 @@ import Button from "./Components/Button/Button";
 import Picture from "./Components/Picture/Picture";
 import { useEffect, useState } from "react";
 import { Context } from "./Context/Context";
+import Player from "./Components/Player/Player";
 
 function App() {
   const [quote, setQuote] = useState("KANYE SAID...");
@@ -16,6 +17,7 @@ function App() {
   return (
     <Context.Provider value={{ quote, setQuote, visionQuote, setVisionQuote }}>
       <div className="App">
+        <Player />
         <div className="main-wrapper">
           <Picture />
           <Quote />
