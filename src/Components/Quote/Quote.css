@@ -1,14 +1,15 @@
 .wrap {
   max-width: 85%;
-  min-width: 300px;
+  min-width: 350px;
 }
 
 .quote-wrapper {
   width: 100%;
-  min-height: 100px;
+  min-height: 60px;
   font-weight: 600;
   font-size: 35px;
   padding-bottom: 10px;
+  padding-top: 10px;
   text-align: center;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;

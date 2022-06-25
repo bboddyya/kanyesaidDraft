@@ -4,11 +4,13 @@ import { Context } from "../../Context/Context";
 import "./Button.css";
 
 function Button() {
-  const { setQuote, setVisionQuote, setIsPlaying } = useContext(Context);
+  const { setQuote, setVisionQuote, setIsPlaying, spin, setSpin } =
+    useContext(Context);
 
   async function getQuote() {
     const data = await fetch("https://api.kanye.rest");
     const json = await data.json();
+    await setSpin(false);
     await setVisionQuote(true);
     await setQuote(json.quote.toUpperCase());
     await setIsPlaying(true);
@@ -30,7 +32,7 @@ function Button() {
 
   return (
     <div className="button-wrapper">
-      <button onClick={getQuote}>REFRESH</button>
+      <button onClick={getQuote}>{spin ? `LET'S GO!` : `REFRESH`}</button>
     </div>
   );
 }

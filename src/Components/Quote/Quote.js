@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Quote.css";
 import { Context } from "../../Context/Context";
 import { CSSTransition } from "react-transition-group";

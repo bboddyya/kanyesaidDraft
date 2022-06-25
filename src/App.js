@@ -7,10 +7,11 @@ import { Context } from "./Context/Context";
 import Player from "./Components/Player/Player";
 
 function App() {
-  const [quote, setQuote] = useState("KANYE SAID...");
+  const [quote, setQuote] = useState("KANYE THINKING...");
   const [visionQuote, setVisionQuote] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-
+  const [spin, setSpin] = useState(true);
+  const [duration, setDuration] = useState(0);
   useEffect(() => {
     setVisionQuote(false);
   }, [quote]);
@@ -24,6 +25,10 @@ function App() {
         setVisionQuote,
         isPlaying,
         setIsPlaying,
+        spin,
+        setSpin,
+        duration,
+        setDuration,
       }}
     >
       <div className="App">
