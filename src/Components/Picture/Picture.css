@@ -82,10 +82,10 @@
 @media (max-width: 958px) {
   .spinner {
     position: absolute;
-    top: 53px;
-    left: 65px;
+    top: 60px;
+    left: 75px;
     color: rgba(255, 255, 255, 0.846);
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .picture img {
@@ -96,8 +96,8 @@
 @media (max-width: 750px) {
   .spinner {
     position: absolute;
-    top: 40px;
-    left: 50px;
+    top: 60px;
+    left: 65px;
     color: rgba(255, 255, 255, 0.846);
     font-size: 25px;
   }
