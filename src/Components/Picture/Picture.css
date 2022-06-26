@@ -7,6 +7,12 @@
   position: relative;
 }
 
+.mute {
+  position: absolute;
+
+  top: 10px;
+}
+
 .spinner {
   position: absolute;
   top: 75px;
@@ -24,7 +30,7 @@
 }
 
 .spinOff {
-  animation: spinOff 0.5s ease forwards;
+  animation: spinOff 1s ease forwards;
 }
 
 @keyframes spin {
@@ -54,36 +60,6 @@
   }
 }
 
-/* .spinner-appear {
-  animation: spin 1s ease infinite;
-}
-
-.spinner-done-appear {
-  animation: spin 1s ease infinite;
-}
-
-.spinner-active-enter {
-  animation: spin 1s ease forwards;
-}
-
-.spinner-done-enter {
-  animation: spin 1s ease infinite;
-}
-
-.spinner-my-exit {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
-.spinner-my-active-exit {
-  transform: translateY(-50px);
-  opacity: 0;
-}
-
-.spinner-done-exit {
-
-} */
-
 .picture img {
   width: 200px;
 }
@@ -101,4 +77,34 @@
 .picture-exit-active {
   opacity: 0;
   transition: opacity 200ms;
+}
+
+@media (max-width: 958px) {
+  .spinner {
+    position: absolute;
+    top: 53px;
+    left: 65px;
+    color: rgba(255, 255, 255, 0.846);
+    font-size: 30px;
+  }
+
+  .picture img {
+    /* width: 130px; */
+    width: 150px;
+  }
+}
+
+@media (max-width: 750px) {
+  .spinner {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.846);
+    font-size: 25px;
+  }
+
+  .picture img {
+    width: 130px;
+    /* width: 200px; */
+  }
 }

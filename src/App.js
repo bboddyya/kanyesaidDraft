@@ -12,6 +12,8 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [spin, setSpin] = useState(true);
   const [duration, setDuration] = useState(0);
+  const [muted, setMuted] = useState(false);
+
   useEffect(() => {
     setVisionQuote(false);
   }, [quote]);
@@ -29,6 +31,8 @@ function App() {
         setSpin,
         duration,
         setDuration,
+        muted,
+        setMuted,
       }}
     >
       <div className="App">

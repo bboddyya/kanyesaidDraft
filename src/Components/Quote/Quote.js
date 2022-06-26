@@ -8,7 +8,7 @@ function Quote() {
 
   return (
     <div className="wrap">
-      <CSSTransition in={visionQuote} timeout={150} classNames="quote-wrapper">
+      <CSSTransition in={visionQuote} timeout={300} classNames="quote-wrapper">
         <div className="quote-wrapper">{quote}</div>
       </CSSTransition>
     </div>
